@@ -1,0 +1,25 @@
+#!/usr/bin/env sh
+
+# Build static site into ./docs for GitHub Pages, preserving the CNAME file.
+
+set -e
+
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+
+CNAME_BACKUP=""
+if [ -f docs/CNAME ]; then
+  CNAME_BACKUP="$(mktemp)"
+  cp docs/CNAME "$CNAME_BACKUP"
+fi
+
+# Build (vite is configured to output to ./docs without emptying it)
+npm run build
+
+# Restore CNAME if it existed; never let the build overwrite/remove it.
+if [ -n "$CNAME_BACKUP" ]; then
+  cp "$CNAME_BACKUP" docs/CNAME
+  rm -f "$CNAME_BACKUP"
+fi
+
+git add docs
