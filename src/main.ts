@@ -26,8 +26,7 @@ const apps: App[] = [
   {
     name: "command-center",
     url: "https://github.com/recyclerobot/command-center",
-    description:
-      "Native macOS app — small utilities for day-to-day workflows.",
+    description: "Native macOS app — small utilities for day-to-day workflows.",
   },
 ];
 
@@ -60,7 +59,7 @@ root.innerHTML = `
             <span class="app__desc">${a.description}</span>
           </span>
         </a>
-      </li>`
+      </li>`,
       )
       .join("")}
   </ul>
