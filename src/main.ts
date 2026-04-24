@@ -25,8 +25,7 @@ const apps: App[] = [
   {
     name: "text",
     url: "https://text.pages.recyclerobot.com",
-    description:
-      "Browser text editor with Word, Pages and Markdown support.",
+    description: "Browser text editor with Word, Pages and Markdown support.",
   },
   {
     name: "epc",
