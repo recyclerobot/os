@@ -18,6 +18,17 @@ const apps: App[] = [
     description: "WebGL print / InDesign-alike editor.",
   },
   {
+    name: "video",
+    url: "https://video.pages.recyclerobot.com",
+    description: "WebGL video editor in the browser.",
+  },
+  {
+    name: "text",
+    url: "https://text.pages.recyclerobot.com",
+    description:
+      "Browser text editor with Word, Pages and Markdown support.",
+  },
+  {
     name: "epc",
     url: "https://epc.pages.recyclerobot.com",
     description:
