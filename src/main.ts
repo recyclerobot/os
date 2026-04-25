@@ -34,8 +34,8 @@ const apps: App[] = [
       "EPC QR code generator — Wero, Payconiq and other EU banking apps.",
   },
   {
-    name: "command-center",
-    url: "https://github.com/recyclerobot/command-center",
+    name: "menulet",
+    url: "https://github.com/recyclerobot/menulet",
     description: "Native macOS app — small utilities for day-to-day workflows.",
   },
 ];
